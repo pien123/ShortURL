@@ -37,6 +37,3 @@ def index(code):
         return redirect(f"{cur.fetchall()[0][2]}")
     except:
         return f"Error<br>{sys.exc_info()}"
-
-if __name__ == "__main__":
-    app.run(debug=True)
